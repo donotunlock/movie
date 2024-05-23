@@ -13,9 +13,10 @@ const gameBoard = document.getElementById('gameBoard');
 let cardsChosen = [];
 let cardsChosenId = [];
 let cardsWon = [];
+let doubledCardsArray = [];
 
 function createBoard() {
-    const doubledCardsArray = cardsArray.concat(cardsArray);
+    doubledCardsArray = cardsArray.concat(cardsArray);
     doubledCardsArray.sort(() => 0.5 - Math.random());
 
     for (let i = 0; i < doubledCardsArray.length; i++) {
@@ -34,7 +35,7 @@ function createBoard() {
 function flipCard() {
     const cardId = this.getAttribute('data-id');
     if (cardsChosenId.includes(cardId)) return;
-    cardsChosen.push(cardsArray[cardId % cardsArray.length].name);
+    cardsChosen.push(doubledCardsArray[cardId].name);
     cardsChosenId.push(cardId);
     this.classList.add('flipped');
     if (cardsChosen.length === 2) {
