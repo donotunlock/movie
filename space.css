@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 2px;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.invader {
+    background-color: green;
+}
+
+.player {
+    background-color: blue;
+}
+
+.laser {
+    background-color: red;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
