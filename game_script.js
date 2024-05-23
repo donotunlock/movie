@@ -1,12 +1,12 @@
 const cardsArray = [
-    { name: 'card1', img: 'images/card1.png' },
-    { name: 'card2', img: 'images/card2.png' },
-    { name: 'card3', img: 'images/card3.png' },
-    { name: 'card4', img: 'images/card4.png' },
-    { name: 'card5', img: 'images/card5.png' },
-    { name: 'card6', img: 'images/card6.png' },
-    { name: 'card7', img: 'images/card7.png' },
-    { name: 'card8', img: 'images/card8.png' },
+    { name: 'card1', img: 'card1.png' },
+    { name: 'card2', img: 'card2.png' },
+    { name: 'card3', img: 'card3.png' },
+    { name: 'card4', img: 'card4.png' },
+    { name: 'card5', img: 'card5.png' },
+    { name: 'card6', img: 'card6.png' },
+    { name: 'card7', img: 'card7.png' },
+    { name: 'card8', img: 'card8.png' },
 ];
 
 const gameBoard = document.getElementById('gameBoard');
