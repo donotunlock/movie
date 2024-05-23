@@ -33,6 +33,7 @@ function createBoard() {
 
 function flipCard() {
     const cardId = this.getAttribute('data-id');
+    if (cardsChosenId.includes(cardId)) return;
     cardsChosen.push(cardsArray[cardId % cardsArray.length].name);
     cardsChosenId.push(cardId);
     this.classList.add('flipped');
